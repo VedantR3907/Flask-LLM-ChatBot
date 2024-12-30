@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Groq API</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Left Panel -->
+        <div class="left-panel">
+            <div class="panel-header">Chats</div>
+            <button id="add-chat-button" class="add-chat-button">➕ Add New Chat</button>
+            <ul class="menu-items" id="chat-list">
+                <!-- Chat list dynamically populated -->
+            </ul>
+        </div>
+        <!-- Right Content -->
+        <div class="right-content">
+            <!-- Existing Chat Structure -->
+            <button id="theme-toggle" class="theme-toggle">🌙</button>
+            <div class="chat-wrapper">
+                <div id="chat-container" class="chat-container">
+                    <!-- Chat messages will appear here -->
+                </div>
+                <div class="input-container">
+                    <div class="textarea-wrapper">
+                        <textarea id="prompt" placeholder="Type your message here..."></textarea>
+                        <button id="button" class="send-button">➤</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>

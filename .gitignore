@@ -1,0 +1,15 @@
+# Ignore Python virtual environment directories
+.venv/
+venv/
+
+# Ignore environment variable files
+.env
+.env.*
+
+# macOS-specific files
+.DS_Store
+
+# Byte-compiled Python files
+__pycache__/
+*.py[cod]
+*$py.class
