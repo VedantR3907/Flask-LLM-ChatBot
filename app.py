@@ -89,8 +89,4 @@ def generate():
     return Response(stream_response_and_save(), content_type="text/plain", status=200)
 
 if __name__ == "__main__":
-    app.run(debug=True)
-
-
-if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=80, host="0.0.0.0")
